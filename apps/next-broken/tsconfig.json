@@ -11,12 +11,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true,
+    "strictPropertyInitialization": false,
     "plugins": [
       {
         "name": "next"
       }
     ],
-    "types": ["jest", "node"]
+    "types": [
+      "jest",
+      "node"
+    ]
   },
   "include": [
     "**/*.ts",
@@ -25,7 +29,8 @@
     "**/*.jsx",
     "../../apps/next-broken/.next/types/**/*.ts",
     "../../dist/apps/next-broken/.next/types/**/*.ts",
-    "next-env.d.ts"
+    "next-env.d.ts",
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules",
